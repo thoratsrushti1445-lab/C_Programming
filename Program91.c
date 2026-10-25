@@ -1,0 +1,34 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int Factorial (int iNo)
+{
+    int iCnt=0,iFact=0;
+    iFact=1;
+    for(iCnt=1;iCnt<=iNo;iCnt++)
+    {
+        iFact=iFact*iCnt;
+    }
+    return iFact;
+}
+
+
+
+
+
+int main()
+{
+    int iValues=0,iRet=0;
+    int iCnt=0;
+    printf("Enter the number:\n");
+    scanf("%d",&iValues);
+
+  iRet=Factorial(iValues);
+   
+printf("Factorial is :%d\n",iRet);
+   
+
+
+    return EXIT_SUCCESS;
+}
